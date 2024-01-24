@@ -1,0 +1,72 @@
+// === roadmap
+#roadmap {
+	/* 視差 */
+	#scene {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.roadmap-bg {
+		width: 380px;
+		height: 380px;
+		position: absolute;
+		top: 15% !important;
+		left: 30%;
+	}
+	.roadmap-1 {
+		width: 225px;
+		height: 225px;
+		position: absolute;
+		top: 0% !important;
+		left: 20% !important;
+	}
+	.roadmap-2 {
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: 25% !important;
+		left: 60% !important;
+	}
+	.roadmap-3 {
+		width: 202px;
+		height: 202px;
+		position: absolute;
+		top: 40% !important;
+		left: 25% !important;
+	}
+
+	.roadmap-bg img,
+	.roadmap-1 img,
+	.roadmap-2 img,
+	.roadmap-3 img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	/* 步驟 */
+	.step {
+		width: 90px;
+		height: 90px;
+		background: $lightgreen;
+		font-size: 2em;
+		font-weight: 700;
+		color: #fff;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		border-radius: 0 20px;
+	}
+
+	.roadmap-title {
+		color: $lightgreen;
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	.roadmap-text {
+		color: $lightgray;
+		font-size: 2rem;
+		font-weight: 700;
+	}
+}

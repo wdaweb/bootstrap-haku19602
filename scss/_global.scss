@@ -1,0 +1,41 @@
+$lightgreen: #c4c24b;
+$midgreen: #417b40;
+$darkgreen: #1b3a25;
+$darkgray: #222;
+$lightgray: #aaa;
+
+/* 網頁主要字體 */
+body {
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* 每個 section 的標題 */
+.title {
+	color: $lightgreen;
+	font-size: 6rem;
+	font-weight: 700;
+	text-align: center;
+	margin: auto;
+}
+
+/* 每個 section 的副標 */
+.title-second {
+	color: $lightgray;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 4rem;
+}
+
+.rounded-nft {
+	border-radius: 0 1rem;
+}
+
+.rounded-top-right {
+	border-top-right-radius: 1rem;
+}
+
+.rounded-bottom-left {
+	border-bottom-left-radius: 1rem;
+}
