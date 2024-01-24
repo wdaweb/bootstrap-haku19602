@@ -1,12 +1,4 @@
 gsap.registerPlugin(ScrollTrigger)
-// home 背景動畫
-// gsap.to('#home', {
-//   backgroundSize: 'cover 110%',
-//   duration: 10,
-//   yoyo: true,
-//   repeat: -1
-// }
-// );
 
 // #home 猴子進場
 gsap.from('.monkey', {
@@ -124,4 +116,37 @@ gsap.from('.teams', {
 	autoAlpha: 0,
 	duration: 1,
 	ease: 'linear'
+})
+
+// counter 跑數字
+const targetNumbers = {
+	num1500: 1500,
+	num1200: 1200,
+	num170: 170
+}
+gsap.from(targetNumbers, {
+	// 動畫的起始值
+	num1500: 0,
+	num1200: 0,
+	num170: 0,
+
+	// 動畫持續時間
+	duration: 2,
+
+	// onUpdate 回調會在每一幀更新時執行
+	onUpdate: () => {
+		// 更新顯示數字的元素文本內容
+		document.getElementById('num1500').textContent = Math.round(targetNumbers.num1500)
+		document.getElementById('num1200').textContent = Math.round(targetNumbers.num1200)
+		document.getElementById('num170').textContent = Math.round(targetNumbers.num170)
+	},
+
+	// 控制軸控制動畫何時觸發
+	scrollTrigger: {
+		trigger: '#counter',
+		start: 'top center',
+		end: 'bottom center',
+		toggleActions: 'play none none none'
+		// markers: true
+	}
 })
